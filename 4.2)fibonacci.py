@@ -4,18 +4,18 @@ By starting with 1 and 2, the first 10 terms will be:1, 2, 3, 5, 8, 13, 21, 34, 
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms
 """
 #method1:
-limit = 4000000
+limit = 4000000// limit of number
 sum = 0
 a = 1
 b = 1
 while b < limit:
   
-  if b % 2 == 0 : 
+  if b % 2 == 0 : //modulus operator
   sum += b
   h = a + b
   a, b = b, h
   
-print(sum)
+print(sum)//prints sum
 #output:
 4613732
 #method 2:
@@ -30,6 +30,6 @@ while c < limit:
   a = b + c
   b = c + a
   c = a + b
-print(sum)
+print(sum)//printing
 #output
 4613732
